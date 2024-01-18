@@ -1,0 +1,41 @@
+<html> 
+    <body>
+        <div>
+            <h1>Will you be my valentine aki?</h1>
+            <button id="yesButton">Yes</button>
+            <button id="no">No</button>
+    </div>       
+    <style>
+    div {
+        text-align: center;
+        vertical-align: middle;
+        }
+    #no{
+        position: absolute;
+    }
+    </style>
+    <link rel="stylesheet"
+		href="style.css"/> 
+    <script>
+        document.getElementById("yesButton").addEventListener("click",function(){
+        alert("I loveyou! See you soon Aki :>");
+    });
+    var b = document.getElementById("no")
+    b.addEventListener("click",change);
+    function change()   {
+        var i = Math.floor(Math.ramdom()*1000)+1;
+        var j = Math.floor(Math.random()*700)+1;
+        b.style.left = i+"px";
+        b.style.top = j+"px";
+
+
+
+
+    }
+
+
+
+    </script>
+    </div>
+</body>
+</html>
